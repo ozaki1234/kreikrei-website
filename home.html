@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- IE対策 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <title>キレイきれいhome</title>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header-left">
+                <a class="header-title">KeriKeri</a>
+            </div>
+        </div>
+        <!-- MNYU -->
+        <div class="header-right">
+            <dl class="menu_dl">
+                <dt class="menu">MENU</dt>
+                <dd>
+                    <div class="menu_dd"><a class="menu_a" href="./course&reserve.html">course&reserve</a></div>
+                    <div class="menu_dd"><a class="menu_a" href="./map&contact_us.html">Map&Contact Us</a></div>
+                    <div class="menu_dd"><a class="menu_a" href="./login.html">login</a></div>
+                </dd>
+            </dl>
+            <!-- htmlのdetails機能でのアコーディオン（JSで可能なため廃止） -->
+            <!-- <details><summary class="menu"><strong>Menu</strong></summary>
+                <ul class="menu_ul">
+                    <li class="menu_li"><a href="./course&reserve.html" class="ul_li_a">course&reserve</a></li>
+                    <li class="menu_li"><a href="./map&contact_us.html" class="ul_li_a">Map&Contact Us</a></li>
+                    <li class="menu_li"><a href="./login.html" class="ul_li_a">login</a></li>
+                </ul>
+            </details> -->
+        </div>
+    </header>
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="main_content">
+                <h1 class="main_content_h1">あなたのキレイに寄り添いたい。</h1>
+                <h2 class="main_content_h2">-キレイきれい-</h2>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <h1 class="footer-title">KeriKeri</h1>
+            </div>
+          <p class="light">Copyright © KeriKeri All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> 
+    <script>
+        $(".menu_dl dt").on("click", function(){
+            $(this).next().slideToggle();
+        })
+    </script>
+</body>
+</html>

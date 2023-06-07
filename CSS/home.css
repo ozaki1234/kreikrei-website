@@ -1,0 +1,134 @@
+/**
+ * **************************************
+ *  homeページ全体に関わるCSSの設定
+ * **************************************
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* ページの基本書体 */
+  font-family : 'Yu Mincho', serif;
+}
+
+a {
+    text-decoration: none;
+  }
+
+li {
+  list-style:none
+}
+
+  .container {
+    width: 1120px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+
+/**
+ * **************************************
+ *  headerに関わるCSSの設定
+ * **************************************
+*/
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(179, 44, 78, 0.9);
+  /* ヘッダーの固定 */
+  position: fixed;
+  top: 0;
+  /* ヘッダーが一番上の層に来るように指定 */
+  z-index: 10;
+}
+
+.header-left{
+  font-family :'Yu Mincho', serif;
+  float: left;
+  padding: 15px 30px 10px 20px;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.header-right {
+  float: right;
+  padding: 10px 70px 0 5px;
+}
+
+/* detailsの中のsummaryのクラス */
+.menu {
+  font-family: 'Yu Mincho', serif;
+  font-size: 40px;
+  color: aliceblue;
+  padding-left: 600px;
+ 
+  
+}
+
+
+/* Menuのddのタグクラス */
+.menu_dd {
+  padding: 35px;
+  background-color: rgba(179, 44, 78, 0.9);
+}
+
+/* ddの中のaタグのクラス */
+.menu_a {
+  font-family: 'Yu Mincho', serif;
+  color: aliceblue;
+  font-size: 80px;
+}
+
+/**
+ * **************************************
+ *  homeメインに関わるCSSの設定
+ * **************************************
+*/
+  .main-wrapper {
+    padding: 500px 0  1000px 0;
+    background-image: url(../images/home_image.jpg);
+    /* 背景サイズを中央に */
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main_content{
+    padding: 60px;
+    background-color: rgba(179, 44, 78, 0.9);
+  }
+
+  .main_content_h1{
+    font-family: 'Yu Mincho', serif;
+    color: aliceblue;
+    font-size: 40px;
+    text-align: center
+  }
+
+  .main_content_h2{
+    font-family: 'Yu Mincho', serif;
+    color: aliceblue;
+    font-size: 40px;
+    text-align: center
+  }
+
+/**
+ * **************************************
+ *  footerメインに関わるCSSの設定
+ * **************************************
+*/
+
+footer {
+  background-color: black;
+  padding: 5px;
+}
+
+.footer-title {
+  color: aliceblue;
+  font-family: "Hiragino Kaku Gothic ProN";
+  margin: 0%;
+}
+
+.light {
+  color: aliceblue;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
