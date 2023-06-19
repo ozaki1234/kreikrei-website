@@ -63,13 +63,14 @@ header {
 */
 .main-wrapper {
   text-align: center;
-
+  height: 700px;
 }
 
 img{
-  width: 40%;
-  height: 60%;
-  padding-top: 5%;
+  width: 60%;
+  height: 600px;
+  padding-top: 10%;
+  border: 1px;
 }
 
 /**
